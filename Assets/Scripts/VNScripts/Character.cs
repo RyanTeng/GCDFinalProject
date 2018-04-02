@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//from http://www.indiana.edu/~gamedev/2015/09/27/creating-a-visual-novel-in-unity/
 public class Character : MonoBehaviour
 {
 

@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
+//from http://www.indiana.edu/~gamedev/2015/09/27/creating-a-visual-novel-in-unity/
 public class DialogueManager : MonoBehaviour
 {
 
