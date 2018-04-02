@@ -57,21 +57,9 @@ public class DialogueParser : MonoBehaviour
                 if (line != null)
                 {
                     string[] lineData = line.Split(';');
-                    if (lineData[0] == "Player")
-                    {
-                        DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");
-                        lineEntry.options = new string[lineData.Length - 1];
-                        for (int i = 1; i < lineData.Length; i++)
-                        {
-                            lineEntry.options[i - 1] = lineData[i];
-                        }
-                        lines.Add(lineEntry);
-                    }
-                    else
-                    {
+
                         DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), lineData[3]);
                         lines.Add(lineEntry);
-                    }
                 }
             }
             while (line != null);

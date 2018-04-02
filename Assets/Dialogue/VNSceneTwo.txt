@@ -1,12 +1,12 @@
-Director Ray; Alright campers, hope you had a good weekend! It’s time to start this baseball tournament off right!; 0; R;
+Director Ray; Alright campers, hope you had a good weekend! It's time to start this baseball tournament off right!; 0; R;
 
 Ryan; I hope we got enough practice in.; 0; L;
 
-Stella; I’m sure we’ll be fine. We’re facing off against the worst team right now. We’re both good enough players on our own to defeat these chumps.; 0; L;
+Stella; I'm sure we'll be fine. We're facing off against the worst team right now. We're both good enough players on our own to defeat these chumps.; 0; L;
 
 Director Ray; Ok, Ryan and Stella, you will be playing against the Skylight Savages.; 0; R;
 
-Counselor Dan; Ok you two, the Skylight Savages are currently the worst ranked team in the league. Their captain, Jimmy, is one of those nerds who thinks that they’re better than they really are. Now go out there, and have fun! But don’t lose, because if you do, then everyone at this camp will lose all respect for you.; 0; R;
+Counselor Dan; Ok you two, the Skylight Savages are currently the worst ranked team in the league. Their captain, Jimmy, is one of those nerds who thinks that they're better than they really are. Now go out there, and have fun! But don't lose, because if you do, then everyone at this camp will lose all respect for you.; 0; R;
 
 Ryan; Wow, thanks Dan.; 0; L;
 
@@ -16,7 +16,7 @@ Jimmy; You watch yourselves, buckos. Baseball is a numbers game, and if my calcu
 
 Ryan; Does that include the new rules?; 0; L;
 
-Jimmy; Yes, higher numbers are always better in regards to sports, you don’t even need a big brain to know that.; 0; R;
+Jimmy; Yes, higher numbers are always better in regards to sports, you don't even need a big brain to know that.; 0; R;
 
 Ryan; What about golf?; 0; L;
 
@@ -24,9 +24,9 @@ Jimmy; ...what?; 0; R;
 
 Ryan; Well, in golf, you want to get a lower score in order to win; 0; L;
 
-Jimmy; ...well, yeah sure, but we’re playing baseball, and higher numbers are always better in baseball!; 0; R;
+Jimmy; ...well, yeah sure, but we're playing baseball, and higher numbers are always better in baseball!; 0; R;
 
-Stella; I mean, that’s not entirely true. You don’t want a high number of strikes, or outs, or fouls, or-; 0; L;
+Stella; I mean, that's not entirely true. You don't want a high number of strikes, or outs, or fouls, or-; 0; L;
 
-Jimmy; WHATEVER! Let’s just play some baseball!; 0; R;
+Jimmy; WHATEVER! Let's just play some baseball!; 0; R;
 
