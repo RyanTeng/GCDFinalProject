@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
+	public Text health_text;
 	private Rigidbody2D rb2d;
 	private AudioSource sound;
 
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
 		sound = GetComponent<AudioSource>();
+		health_text.text = "Health: " + Health.ToString();
 
 	}
 	
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			sound.Play();
 			Health -= 5;
+			health_text.text = "Health: " + Health.ToString();
 			if (Health <= 0)
 			{
 				gameObject.SetActive(false);
