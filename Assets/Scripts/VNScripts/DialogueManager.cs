@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 //from http://www.indiana.edu/~gamedev/2015/09/27/creating-a-visual-novel-in-unity/
 public class DialogueManager : MonoBehaviour
@@ -45,6 +46,14 @@ public class DialogueManager : MonoBehaviour
 
             lineNum++;
         }
+        else if (Input.GetMouseButtonDown(1) && playerTalking == false)
+        {
+            if (lineNum != 0)
+            {
+                lineNum--;
+                ShowDialogue();
+            }
+        }
 
         UpdateUI();
     }
@@ -68,7 +77,11 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine()
     {
-        if (parser.GetName(lineNum) != "Player")
+        if (parser.GetName(lineNum) == "EndScene")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else if (parser.GetName(lineNum) != "Player")
         {
             playerTalking = false;
             characterName = parser.GetName(lineNum);
