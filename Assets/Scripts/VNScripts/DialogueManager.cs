@@ -54,7 +54,6 @@ public class DialogueManager : MonoBehaviour
                 ShowDialogue();
             }
         }
-
         UpdateUI();
     }
 
@@ -151,8 +150,16 @@ public class DialogueManager : MonoBehaviour
         {
             ClearButtons();
         }
-        dialogueBox.text = dialogue;
         nameBox.text = characterName;
+        int i = 0;
+        dialogueBox.text = "";
+        while (i < dialogue.Length)
+        {
+            dialogueBox.text += dialogue[i++];
+            new WaitForSeconds(1.0f);
+        }
+
+
     }
 
     void ClearButtons()
