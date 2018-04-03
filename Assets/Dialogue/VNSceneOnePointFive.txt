@@ -1,63 +1,33 @@
 Counselor Dan; Wow, you guys were just...terrible. Like I knew you guys were going to suck, but that was way worse than I ever could've imagined.; 0; R;
-
 Ryan; It's not my fault! Stella was just whiffing the balls! She barely had any power or technique!; 0; L;
-
 Stella; Are you kidding? It was your terrible aim with your pitching that made us lose! My batting was just fine!; 0; L;
-
 Ryan; Pfft. As if.; 0; L;
-
 Counselor Dan; Both of you, stop it! You lost because you weren't able to work together. If you keep this up, there's no way you'll stand a chance in the tournament!; 0; R;
-
 Ryan; Whatever, man. I'm just gonna do what I can to get out of here as quick as possible.; 0; L;
-
 Stella; Same. Why waste effort on something that's basically meaningless?; 0; L;
-
 Counselor Dan; But if you guys don't work together, then you won't win the prize!; 0; R;
-
 Stella; We don't care about some dumb prize! We just want to get out of here as soon as possible!; 0; L;
-
 Counselor Dan; Huh, I guess you don't want to see your parents after winning the tournament, huh?; 0; R;
-
 Ryan; Come again?; 0; L;
-
 Counselor Dan; The team who wins the tournament gets to go home for the weekend! I thought you knew that.; 0; R;
-
 Ryan; How would we have known that? We just got here!; 0; L;
-
 Stella; Umm, Ryan? A word?; 0; L;
-
 Stella; Are you thinking what I'm thinking?; 0; L;
-
 Ryan; That this camp looks like it is violating several codes?; 0; R;
-
 Stella; No!...I mean yes, duh. But that's not what I had in mind right now.; 0; L;
-
 Ryan; You want to get out of here ASAP?; 0; R;
-
 Stella; Right, and the fastest way to do that...; 0; L;
-
 Ryan; ...is by winning the tournament. Once we do that, we'll convince our parents...; 0; R;
-
 Stella; ...that the camp is a hoax, and that they should get us out of there as soon as possible.; 0; L;
-
 Ryan; You realize that in order to win the tournament, we're gonna have to work together, right?; 0; R;
-
 Stella; That thought did cross my mind, yes. But as much as it sickens me to say it, I can put it behind me for now if you can.; 0; L;
-
 Ryan; Well, I hate you, but I think I hate this stupid camp even more. Alright, I'm in.; 0; R;
-
 Stella; Great. We can't let anyone in on our plan though. We're gonna have to pretend to actually like each other.; 0; L;
-
 Ryan; Alright, fine.; 0; R;
-
 Ryan; Counselor Dan, we've talked about it, and we decided that we should actually try.; 0; L;
-
 Stella; Yeah, might as well make the most out of this camp, since we're stuck here anyways.; 0; L;
-
 Counselor Dan; Now, that's what I'm talking about! Now, we only have a few days to practice before your first game. I can help, but I need to know that you two are fully committed.; 0; R;
-
 Ryan; I'm in.; 0; L;
-
 Stella; Me too.; 0; L;
-
 Counselor Dan; Alright, let's do this!; 0; R;
+EndScene; EndScene; 0; L;

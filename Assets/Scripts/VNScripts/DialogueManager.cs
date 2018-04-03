@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 //from http://www.indiana.edu/~gamedev/2015/09/27/creating-a-visual-novel-in-unity/
 public class DialogueManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     string position;
     string[] options;
     public bool playerTalking;
+    public string nextLevel;
     List<Button> buttons = new List<Button>();
 
     public Text dialogueBox;
@@ -68,7 +70,11 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine()
     {
-        if (parser.GetName(lineNum) != "Player")
+        if (parser.GetName(lineNum) == "EndScene")
+        {
+            SceneManager.LoadScene("Scenes/" + nextLevel);
+        }
+        else if (parser.GetName(lineNum) != "Player")
         {
             playerTalking = false;
             characterName = parser.GetName(lineNum);
