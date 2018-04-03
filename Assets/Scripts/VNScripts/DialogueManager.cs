@@ -164,8 +164,9 @@ public class DialogueManager : MonoBehaviour
         while (i < dialogue.Length)
         {
             dialogueBox.text += dialogue[i++];
+			source.pitch = Random.Range (1.0f, 1.5f);
             source.Play();
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.02f);
         }
     }
 
