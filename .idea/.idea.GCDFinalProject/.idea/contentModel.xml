@@ -8,7 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Dialogue" t="Include">
           <e p="VNSceneOne.txt" t="Include" />
-          <e p="VNSceneOneAndAHalf.txt" t="Include" />
+          <e p="VNSceneOnePointFive.txt" t="Include" />
           <e p="VNSceneTwo.txt" t="Include" />
         </e>
         <e p="Plugins" t="Include">
@@ -21,7 +21,10 @@
         <e p="Scripts" t="Include">
           <e p="BaseballGame" t="Include">
             <e p="BaseballController.cs" t="Include" />
+            <e p="CameraScript.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="WaveSpawner.cs" t="Include" />
           </e>
           <e p="VNScripts" t="Include">
             <e p="Character.cs" t="Include" />
