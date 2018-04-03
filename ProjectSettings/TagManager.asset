@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Baseball
+  - Enemy
   layers:
   - Default
   - TransparentFX
