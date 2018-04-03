@@ -56,7 +56,7 @@ Stella; What happened to your "morale-boosts?"; 0; L;
 Counselor Dan; That was before I knew that you were going to be facing the Valiant Falcons. They've the best team for 3 years straight, and don't even get me started on their captain, Faye. She's the fiercest SOB I've ever seen on a baseball field.; 0; R;
 Faye; Oh please, do go on!; 0; R;
 Ryan; You must be Faye.; 0; L;
-Counselor Dan; What tipped you off, the fact that she responded when I referred to “Faye”?; 0; R;
+Counselor Dan; What tipped you off, the fact that she responded when I referred to "Faye"?; 0; R;
 Faye; So, these are the two newbies that my team'll be facing off against now, huh?; 0; R;
 Director Ray; That's correct! Now remember, this is just a scrimmage, so try to go easy on them. We don't need more kids in the infirmary.; 0; R;
 Stella; Wait, what do you mean "more?"; 0; L;

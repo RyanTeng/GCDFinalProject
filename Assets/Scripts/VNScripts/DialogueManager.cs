@@ -17,7 +17,6 @@ public class DialogueManager : MonoBehaviour
     string position;
     string[] options;
     public bool playerTalking;
-    public string nextLevel;
     List<Button> buttons = new List<Button>();
 
     public Text dialogueBox;
@@ -80,7 +79,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (parser.GetName(lineNum) == "EndScene")
         {
-            SceneManager.LoadScene("Scenes/" + nextLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if (parser.GetName(lineNum) != "Player")
         {
