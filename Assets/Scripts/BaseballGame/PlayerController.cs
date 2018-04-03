@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed;
 	private Rigidbody2D rb2d;
+	private AudioSource sound;
+
 	// The baseball to instantiate
 	public GameObject baseball;
 	
@@ -23,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
+		sound = GetComponent<AudioSource>();
+
 	}
 	
 	// Update is called once per frame
@@ -55,5 +59,18 @@ public class PlayerController : MonoBehaviour {
 		print (direction);
 		print (rb2d.transform.position);
 		newBallrb2d.AddTorque(torqueSpeed);
+	}
+	
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.gameObject.tag == "Enemy")
+		{
+			sound.Play();
+			Health -= 5;
+			if (Health <= 0)
+			{
+				gameObject.SetActive(false);
+			}
+		}
 	}
 }
