@@ -154,7 +154,7 @@ public class DialogueManager : MonoBehaviour
             ClearButtons();
         }
         nameBox.text = characterName;
-        StartCoroutine(AnimateDialogue());
+        StartCoroutine("AnimateDialogue");
     }
 
     public IEnumerator AnimateDialogue()
@@ -165,7 +165,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueBox.text += dialogue[i++];
             source.Play();
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.01f);
         }
     }
 

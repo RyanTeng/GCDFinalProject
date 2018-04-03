@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour {
 
@@ -84,8 +85,7 @@ public class WaveSpawner : MonoBehaviour {
 
 		if (nextWave + 1 > waves.Length - 1)
 		{
-			nextWave = 0;
-			Debug.Log("ALL WAVES COMPLETE! Looping...");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 		else
 		{

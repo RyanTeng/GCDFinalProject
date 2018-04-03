@@ -779,6 +779,36 @@ Prefab:
       propertyPath: m_FontData.m_LineSpacing
       value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263900767226728, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263900767226728, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114263900767226728, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f59a6d5cdafb834c9cc39810d89c074, type: 2}
   m_IsPrefabParent: 0
