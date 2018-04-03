@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     public Text nameBox;
     public GameObject choiceBox;
     private AudioSource source;
+	private bool isCoroutine;
 
 
 
@@ -37,25 +38,33 @@ public class DialogueManager : MonoBehaviour
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         lineNum = 0;
         source = GetComponent<AudioSource>();
+		isCoroutine = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false)
+		if (Input.GetMouseButtonDown(0))
         {
             ShowDialogue();
-            lineNum++;
             UpdateUI();
+			if (!isCoroutine) 
+			{
+				lineNum++;
+			}
         }
-        else if (Input.GetMouseButtonDown(1) && playerTalking == false)
+		else if (Input.GetMouseButtonDown(1))
         {
             if (lineNum != 0)
             {
-                lineNum--;
-                ShowDialogue();
+				ShowDialogue();
+				UpdateUI();
+				if (!isCoroutine) 
+				{
+					lineNum++;
+				}
+
             }
-            UpdateUI();
         }
         
     }
@@ -154,20 +163,30 @@ public class DialogueManager : MonoBehaviour
             ClearButtons();
         }
         nameBox.text = characterName;
-        StartCoroutine("AnimateDialogue");
+		if (!isCoroutine) {
+			StartCoroutine ("AnimateDialogue");
+		} 
+		else if (isCoroutine) 
+		{
+			StopCoroutine("AnimateDialogue");
+			dialogueBox.text = dialogue;
+			isCoroutine = false;
+		}
     }
 
     public IEnumerator AnimateDialogue()
     {
+		isCoroutine = true;
         int i = 0;
         dialogueBox.text = "";
         while (i < dialogue.Length)
         {
             dialogueBox.text += dialogue[i++];
-			source.pitch = Random.Range (1.0f, 1.5f);
+			source.pitch = Random.Range (0.75f, 1.25f);
             source.Play();
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.0175f);
         }
+		isCoroutine = false;
     }
 
     void ClearButtons()
