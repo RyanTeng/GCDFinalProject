@@ -151,6 +151,11 @@ public class DialogueManager : MonoBehaviour
             ClearButtons();
         }
         nameBox.text = characterName;
+        AnimateDialogue();
+    }
+
+    public void AnimateDialogue()
+    {
         int i = 0;
         dialogueBox.text = "";
         while (i < dialogue.Length)
@@ -158,8 +163,6 @@ public class DialogueManager : MonoBehaviour
             dialogueBox.text += dialogue[i++];
             new WaitForSeconds(1.0f);
         }
-
-
     }
 
     void ClearButtons()
