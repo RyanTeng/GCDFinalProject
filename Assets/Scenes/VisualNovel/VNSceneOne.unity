@@ -441,6 +441,38 @@ Prefab:
       propertyPath: nextScene
       value: sc_field1
       objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c4bbf03e880ef7448be4aa4b0ddc58bc,
+        type: 3}
+    - target: {fileID: 114263900767226728, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: c4bbf03e880ef7448be4aa4b0ddc58bc,
+        type: 3}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114904853153551828, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f59a6d5cdafb834c9cc39810d89c074, type: 2}
   m_IsPrefabParent: 0
@@ -755,7 +787,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e55c4c7b0a9277647aecab371192433a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
