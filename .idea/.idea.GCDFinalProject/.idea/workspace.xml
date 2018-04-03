@@ -14,7 +14,7 @@
       <file leaf-file-name="PlayerController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseballGame/PlayerController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="1080">
               <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
               <folding>
                 <marker date="1522791677711" expanded="true" signature="6:100" ph="..." />
@@ -225,12 +225,12 @@
       <option name="presentableId" value="Default" />
       <updated>1522775083137</updated>
       <workItem from="1522775086626" duration="8122000" />
-      <workItem from="1522791515258" duration="165000" />
+      <workItem from="1522791515258" duration="762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8287000" />
+    <option name="totallyTimeSpent" value="8884000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,7 +472,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseballGame/ui_health.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseballGame/PlayerController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="1080">
           <caret line="72" column="62" lean-forward="false" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
           <folding>
             <marker date="1522791677711" expanded="true" signature="6:100" ph="..." />
