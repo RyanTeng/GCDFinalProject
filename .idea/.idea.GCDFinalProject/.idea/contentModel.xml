@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Andrew Alcala\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_GCDFinalProject.-429455837.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Andrew Alcala\UnityProjects\GCDFinalProject" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Dialogue" t="Include">
+          <e p="VNSceneOne.txt" t="Include" />
+          <e p="VNSceneOnePointFive.txt" t="Include" />
+          <e p="VNSceneTwo.txt" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BaseballGame" t="Include">
+            <e p="BaseballController.cs" t="Include" />
+            <e p="CameraScript.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
+            <e p="WaveSpawner.cs" t="Include" />
+          </e>
+          <e p="VNScripts" t="Include">
+            <e p="Character.cs" t="Include" />
+            <e p="ChoiceButton.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueParser.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GCDFinalProject.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
