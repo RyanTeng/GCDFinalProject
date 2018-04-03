@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueBox;
     public Text nameBox;
     public GameObject choiceBox;
+    private AudioSource source;
 
 
 
@@ -35,6 +36,7 @@ public class DialogueManager : MonoBehaviour
         playerTalking = false;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
         lineNum = 0;
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,8 +45,8 @@ public class DialogueManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && playerTalking == false)
         {
             ShowDialogue();
-
             lineNum++;
+            UpdateUI();
         }
         else if (Input.GetMouseButtonDown(1) && playerTalking == false)
         {
@@ -53,8 +55,9 @@ public class DialogueManager : MonoBehaviour
                 lineNum--;
                 ShowDialogue();
             }
+            UpdateUI();
         }
-        UpdateUI();
+        
     }
 
     public void ShowDialogue()
@@ -151,15 +154,19 @@ public class DialogueManager : MonoBehaviour
             ClearButtons();
         }
         nameBox.text = characterName;
+        StartCoroutine(AnimateDialogue());
+    }
+
+    public IEnumerator AnimateDialogue()
+    {
         int i = 0;
         dialogueBox.text = "";
         while (i < dialogue.Length)
         {
             dialogueBox.text += dialogue[i++];
-            new WaitForSeconds(1.0f);
+            source.Play();
+            yield return new WaitForSeconds(0.02f);
         }
-
-
     }
 
     void ClearButtons()
