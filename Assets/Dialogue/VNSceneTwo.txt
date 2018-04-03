@@ -14,4 +14,4 @@ Ryan; Well, in golf, you want to get a lower score in order to win; 0; L;
 Jimmy; ...well, yeah sure, but we're playing baseball, and higher numbers are always better in baseball!; 0; R;
 Stella; I mean, that's not entirely true. You don't want a high number of strikes, or outs, or fouls, or-; 0; L;
 Jimmy; WHATEVER! Let's just play some baseball!; 0; R;
-
+EndScene; EndScene; 0; L;

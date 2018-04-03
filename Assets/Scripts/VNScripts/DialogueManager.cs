@@ -47,6 +47,14 @@ public class DialogueManager : MonoBehaviour
 
             lineNum++;
         }
+        else if (Input.GetMouseButtonDown(1) && playerTalking == false)
+        {
+            if (lineNum != 0)
+            {
+                lineNum--;
+                ShowDialogue();
+            }
+        }
 
         UpdateUI();
     }
