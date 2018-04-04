@@ -22,12 +22,14 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private AudioSource sound;
+    private SpriteRenderer SpriteRenderer;
 
     // Use this for initialization
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sound = GetComponent<AudioSource>();
+        SpriteRenderer = GetComponent<SpriteRenderer>()
 
         conscious = true;
         movespeed = Random.Range(lowerspeed, upperspeed);

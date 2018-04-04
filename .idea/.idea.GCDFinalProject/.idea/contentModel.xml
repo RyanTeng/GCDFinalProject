@@ -24,6 +24,7 @@
             <e p="CameraScript.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="RangedUnit.cs" t="Include" />
             <e p="SpawnMover.cs" t="Include" />
             <e p="WaveSpawner.cs" t="Include" />
           </e>
