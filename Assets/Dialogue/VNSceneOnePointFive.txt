@@ -1,7 +1,7 @@
 Counselor Dan; Wow, you guys were just...terrible. Like I knew you guys were going to suck, but that was way worse than I ever could've imagined.; 0; R;
 Ryan; It's not my fault! Stella was just whiffing the balls! She barely had any power or technique!; 0; L;
-Stella; Are you kidding? It was your terrible aim with your pitching that made us lose! My batting was just fine!; 0; L;
-Ryan; Pfft. As if.; 0; L;
+Stella; Are you kidding? It was your terrible accuracy that made us lose! My batting was just fine!; 0; L;
+Ryan; Pfft.; 0; L;
 Counselor Dan; Both of you, stop it! You lost because you weren't able to work together. If you keep this up, there's no way you'll stand a chance in the tournament!; 0; R;
 Ryan; Whatever, man. I'm just gonna do what I can to get out of here as quick as possible.; 0; L;
 Stella; Same. Why waste effort on something that's basically meaningless?; 0; L;
@@ -9,7 +9,7 @@ Counselor Dan; But if you guys don't work together, then you won't win the prize
 Stella; We don't care about some dumb prize! We just want to get out of here as soon as possible!; 0; L;
 Counselor Dan; Huh, I guess you don't want to see your parents after winning the tournament, huh?; 0; R;
 Ryan; Come again?; 0; L;
-Counselor Dan; The team who wins the tournament gets to go home for the weekend! I thought you knew that.; 0; R;
+Counselor Dan; The team who wins the tournament gets a weekend-long trip back home! I thought you knew that.; 0; R;
 Ryan; How would we have known that? We just got here!; 0; L;
 Stella; Umm, Ryan? A word?; 0; L;
 Stella; Are you thinking what I'm thinking?; 0; L;
