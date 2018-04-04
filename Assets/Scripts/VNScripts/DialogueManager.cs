@@ -193,7 +193,6 @@ public class DialogueManager : MonoBehaviour
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            print("Clearing buttons");
             Button b = buttons[i];
             buttons.Remove(b);
             Destroy(b.gameObject);

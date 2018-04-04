@@ -13,7 +13,10 @@ public class EnemyController : MonoBehaviour
 
     public float upperspeed;
     public float lowerspeed;
-    
+
+    public int SCORE_KO;
+    public int SCORE_HIT;
+
     private bool conscious;
     public int Health;
 
@@ -48,12 +51,12 @@ public class EnemyController : MonoBehaviour
             sound.Play();
             rb2d.AddTorque(torque);
             rb2d.AddForce(collision.attachedRigidbody.velocity.normalized * knockback);
-            print("Hit");
             Health -= 5;
-            print(Health);
+            player.GetComponent<PlayerController>().addToScore(SCORE_HIT);
             if (Health <= 0)
             {
                 conscious = false;
+                player.GetComponent<PlayerController>().addToScore(SCORE_KO);
                 gameObject.SetActive(false);
             }
         }

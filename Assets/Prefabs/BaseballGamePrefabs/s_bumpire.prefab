@@ -184,7 +184,9 @@ MonoBehaviour:
   knockback: 100
   upperspeed: 2.2
   lowerspeed: 0.8
-  Health: 100
+  SCORE_KO: 100
+  SCORE_HIT: 10
+  Health: 50
 --- !u!212 &212698051923179596
 SpriteRenderer:
   m_ObjectHideFlags: 1

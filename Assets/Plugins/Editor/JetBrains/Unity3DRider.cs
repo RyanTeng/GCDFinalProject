@@ -483,10 +483,10 @@ namespace Plugins.Editor.JetBrains
       switch (level)
       {
         case LoggingLevel.Warning:
-          Debug.LogWarning(text);
+          //Debug.LogWarning(text);
           break;
         default:
-          Debug.Log(text);
+          //Debug.Log(text);
           break;
       }
     }

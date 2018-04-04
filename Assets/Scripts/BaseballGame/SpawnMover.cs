@@ -47,7 +47,6 @@ public class SpawnMover : MonoBehaviour
             transform.Translate(negativeDirection);
         }
 
-        print(transform.position);
     }
 
     IEnumerator moveswitch()
