@@ -13,25 +13,17 @@ public class EnemyController : MonoBehaviour
 
     public float upperspeed;
     public float lowerspeed;
-
-    public int SCORE_KO;
-    public int SCORE_HIT;
-
-    private bool conscious;
+    
     public int Health;
 
     private Rigidbody2D rb2d;
     private AudioSource sound;
-    private SpriteRenderer SpriteRenderer;
 
     // Use this for initialization
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sound = GetComponent<AudioSource>();
-        SpriteRenderer = GetComponent<SpriteRenderer>()
-
-        conscious = true;
         movespeed = Random.Range(lowerspeed, upperspeed);
         player = GameObject.FindWithTag("Player");
     }
@@ -39,11 +31,8 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (conscious)
-        {
             rb2d.transform.position = Vector2.MoveTowards(rb2d.transform.position,
                 player.GetComponent<Rigidbody2D>().transform.position, movespeed * Time.deltaTime);
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -53,12 +42,11 @@ public class EnemyController : MonoBehaviour
             sound.Play();
             rb2d.AddTorque(torque);
             rb2d.AddForce(collision.attachedRigidbody.velocity.normalized * knockback);
+            print("Hit");
             Health -= 5;
-            player.GetComponent<PlayerController>().addToScore(SCORE_HIT);
+            print(Health);
             if (Health <= 0)
             {
-                conscious = false;
-                player.GetComponent<PlayerController>().addToScore(SCORE_KO);
                 gameObject.SetActive(false);
             }
         }
