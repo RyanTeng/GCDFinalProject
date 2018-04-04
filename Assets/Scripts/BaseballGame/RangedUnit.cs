@@ -21,6 +21,9 @@ public class RangedUnit : MonoBehaviour {
     private Rigidbody2D rb2d;
     private AudioSource sound;
     
+    private Transform target = null;
+
+    
 
     // Use this for initialization
     void Start()
@@ -47,7 +50,6 @@ public class RangedUnit : MonoBehaviour {
         }
     }
 
-    private Transform target = null;
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") target = other.transform;
