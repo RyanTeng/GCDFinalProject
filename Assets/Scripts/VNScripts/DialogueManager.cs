@@ -55,13 +55,13 @@ public class DialogueManager : MonoBehaviour
         }
 		else if (Input.GetMouseButtonDown(1))
         {
-            if (lineNum != 0)
+            if (lineNum > 0)
             {
 				ShowDialogue();
 				UpdateUI();
 				if (!isCoroutine) 
 				{
-					lineNum++;
+					lineNum--;
 				}
 
             }
