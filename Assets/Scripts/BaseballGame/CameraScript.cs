@@ -17,5 +17,6 @@ public class CameraScript : MonoBehaviour {
     void LateUpdate()
     {
         transform.position = player.transform.position + offset;
+        transform.Rotate(Vector3.forward * Time.deltaTime * 180.0f);
     }
 }
