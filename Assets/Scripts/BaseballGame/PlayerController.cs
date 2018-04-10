@@ -107,6 +107,10 @@ public class PlayerController : MonoBehaviour
             health_text.text = "Health: " + Health.ToString();
             if (Health <= 0)
             {
+                if (SceneManager.GetActiveScene().name == "sc_field1")
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
                 gameObject.SetActive(false);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
