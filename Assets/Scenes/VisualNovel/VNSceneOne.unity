@@ -426,6 +426,16 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1928713589}
+    - target: {fileID: 82297759536610982, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 82297759536610982, guid: 4f59a6d5cdafb834c9cc39810d89c074,
+        type: 2}
+      propertyPath: BypassListenerEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f59a6d5cdafb834c9cc39810d89c074, type: 2}
   m_IsPrefabParent: 0
