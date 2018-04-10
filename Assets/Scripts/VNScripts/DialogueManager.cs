@@ -122,7 +122,7 @@ public class DialogueManager : MonoBehaviour
             SetSpritePositions(character);
 
             SpriteRenderer currSprite = character.GetComponent<SpriteRenderer>();
-            currSprite.sprite = character.GetComponent<Character>().characterPoses[pose];
+            currSprite.sprite = character.GetComponent<CharacterPoses>().characterPoses[pose];
         }
     }
 
