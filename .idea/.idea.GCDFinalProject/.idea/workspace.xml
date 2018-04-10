@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73a7be43-8db9-43e8-8e83-c26143ec82d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/contentModel.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field1.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field1.unity" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -507,12 +505,12 @@
       <workItem from="1522791515258" duration="6028000" />
       <workItem from="1523324841228" duration="5701000" />
       <workItem from="1523330947779" duration="3494000" />
-      <workItem from="1523367116156" duration="2463000" />
+      <workItem from="1523367116156" duration="2829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25808000" />
+    <option name="totallyTimeSpent" value="26174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
