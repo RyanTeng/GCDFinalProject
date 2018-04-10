@@ -59,3 +59,6 @@ TagManager:
   - name: Projectile
     uniqueID: 3982213233
     locked: 0
+  - name: UIstuff
+    uniqueID: 1142475059
+    locked: 0

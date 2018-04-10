@@ -6,6 +6,7 @@
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CursorScript.cs" t="Include" />
         <e p="Dialogue" t="Include">
           <e p="VNSceneOne.txt" t="Include" />
           <e p="VNSceneOnePointFive.txt" t="Include" />
@@ -28,8 +29,10 @@
             <e p="SpawnMover.cs" t="Include" />
             <e p="WaveSpawner.cs" t="Include" />
           </e>
+          <e p="ScriptableObjectCharacter.cs" t="Include" />
+          <e p="StartMenu.cs" t="Include" />
           <e p="VNScripts" t="Include">
-            <e p="Character.cs" t="Include" />
+            <e p="CharacterPoses.cs" t="Include" />
             <e p="ChoiceButton.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
             <e p="DialogueParser.cs" t="Include" />
