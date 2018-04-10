@@ -8053,15 +8053,15 @@ MonoBehaviour:
   waves:
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: 0835b2e1b1a4eb044a154c96dddb4464, type: 2}
-    count: 20
+    count: 5
     rate: 1
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: 0835b2e1b1a4eb044a154c96dddb4464, type: 2}
-    count: 20
+    count: 7
     rate: 4
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: f06fe903cab8c1442a665cbdf6be487f, type: 2}
-    count: 20
+    count: 12
     rate: 3
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: f06fe903cab8c1442a665cbdf6be487f, type: 2}
