@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private bool boosted;
     private bool criticalHealth;
+    private float damageFromEnemy;
 
     // The baseball to instantiate
     public GameObject baseball;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         sound = GetComponent<AudioSource>();
         score = 0;
         boosted = false;
+        damageFromEnemy = 4;
         health_text.color = Color.white;
         health_text.text = "Health: " + Health.ToString();
     }
@@ -50,17 +52,26 @@ public class PlayerController : MonoBehaviour
         float tempspeed = speed;
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
-        if (Input.GetKey(KeyCode.Space))
-        {
-            tempspeed *= 2;
-        }
-        
-        rb2d.velocity = (movement * tempspeed);
+//        if (Input.GetKey(KeyCode.Space))
+//        {
+//            tempspeed *= 2;
+//        }
+
 
         if (Input.GetMouseButtonDown(0))
         {
             spawnBall();
         }
+
+        if (Input.GetMouseButton(1))
+        {
+            tempspeed *= 6;
+            print("done");
+            Vector3 direction = Input.mousePosition;
+            movement = (Camera.main.ScreenToWorldPoint(direction) - rb2d.transform.position).normalized;
+        }
+
+        rb2d.velocity = movement * tempspeed;
 
 
         if (!criticalHealth && Health <= 25)
@@ -92,7 +103,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             sound.Play();
-            Health -= 5;
+            Health -= (int) damageFromEnemy;
             health_text.text = "Health: " + Health.ToString();
             if (Health <= 0)
             {
