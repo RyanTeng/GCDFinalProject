@@ -111,8 +111,11 @@ public class PlayerController : MonoBehaviour
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
-                gameObject.SetActive(false);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                else
+                {
+                    gameObject.SetActive(false);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
         }
     }
