@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4369932981137538}
   - component: {fileID: 212698051923179596}
   - component: {fileID: 50795297870913964}
-  - component: {fileID: 61225251894195328}
   - component: {fileID: 114298882355895366}
   - component: {fileID: 82000117879518228}
+  - component: {fileID: 58381934037542288}
   m_Layer: 0
   m_Name: s_bumpirelvl2
   m_TagString: Enemy
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298670221485824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.974, y: 0.283, z: 0}
+  m_LocalPosition: {x: 2.9727764, y: -2.176484, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,8 +64,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61225251894195328
-BoxCollider2D:
+--- !u!58 &58381934037542288
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -77,18 +77,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.78, y: 1.17}
-    newSize: {x: 0.78, y: 1.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.78, y: 1.17}
-  m_EdgeRadius: 0
+  m_Radius: 0.585
 --- !u!82 &82000117879518228
 AudioSource:
   m_ObjectHideFlags: 1
