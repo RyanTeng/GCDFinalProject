@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceBox;
     private AudioSource source;
 	private bool isCoroutine;
+    private bool skip;
 
 
 
@@ -39,6 +40,9 @@ public class DialogueManager : MonoBehaviour
         lineNum = 0;
         source = GetComponent<AudioSource>();
 		isCoroutine = false;
+        nameBox.text = "";
+        dialogueBox.text = "";
+        skip = false;
     }
 
     // Update is called once per frame
@@ -46,23 +50,14 @@ public class DialogueManager : MonoBehaviour
     {
 		if (Input.GetMouseButtonDown(0))
         {
-            ShowDialogue();
-            UpdateUI();
-			if (!isCoroutine) 
-			{
-				lineNum++;
-			}
+            UpdateUI(true);
+			
         }
 		else if (Input.GetMouseButtonDown(1))
         {
             if (lineNum > 0)
             {
-				ShowDialogue();
-				UpdateUI();
-				if (!isCoroutine) 
-				{
-					lineNum--;
-				}
+                UpdateUI(false);
 
             }
         }
@@ -156,14 +151,33 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    void UpdateUI()
+    void UpdateUI(bool leftClick)
     {
         if (!playerTalking)
         {
             ClearButtons();
         }
-        nameBox.text = characterName;
+
+
 		if (!isCoroutine) {
+            if (leftClick)
+            {
+                if (skip)
+                {
+                    lineNum++;
+                    skip = false;
+                }
+                ShowDialogue();
+                nameBox.text = characterName;
+                lineNum++;
+            }
+            else
+            {
+                nameBox.text = characterName;
+                lineNum--;
+                ShowDialogue();
+                skip = true;
+            }
 			StartCoroutine ("AnimateDialogue");
 		} 
 		else if (isCoroutine) 
