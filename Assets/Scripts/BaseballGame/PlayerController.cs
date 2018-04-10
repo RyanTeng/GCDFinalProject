@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource sound;
 
     private bool boosted;
+    private bool criticalHealth;
 
     // The baseball to instantiate
     public GameObject baseball;
@@ -37,8 +38,8 @@ public class PlayerController : MonoBehaviour
         sound = GetComponent<AudioSource>();
         score = 0;
         boosted = false;
+        health_text.color = Color.white;
         health_text.text = "Health: " + Health.ToString();
-        score_text.text = "Score: " + score.ToString();
     }
 
     // Update is called once per frame
@@ -46,13 +47,27 @@ public class PlayerController : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        float tempspeed = speed;
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
-        rb2d.velocity = (movement * speed);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            tempspeed *= 2;
+        }
+        
+        rb2d.velocity = (movement * tempspeed);
 
         if (Input.GetMouseButtonDown(0))
         {
             spawnBall();
+        }
+
+
+        if (!criticalHealth && Health <= 25)
+        {
+            criticalHealth = true;
+            health_text.color = Color.red;
+            GameObject.FindWithTag("ActionMusic").GetComponent<AudioSource>().pitch = 1.15f;
         }
     }
 
@@ -70,12 +85,6 @@ public class PlayerController : MonoBehaviour
         Vector3 norm = Camera.main.ScreenToWorldPoint(direction) - rb2d.transform.position;
         newBallrb2d.velocity = (norm.normalized * ballSpeed);
         newBallrb2d.AddTorque(torqueSpeed);
-    }
-
-    public void addToScore(int value)
-    {
-        score += value;
-        score_text.text = "Score: " + score.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,10 +1,18 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour {
 
 	public enum SpawnState { SPAWNING, WAITING, COUNTING };
+
+	public Text waveText;
+	private AudioSource[] AudioSources;
+	private AudioSource cheer;
+	private AudioSource organ;
+	private ParticleSystem psl;
+	private ParticleSystem psr;
 
 	[System.Serializable]
 	public class Wave
@@ -41,6 +49,12 @@ public class WaveSpawner : MonoBehaviour {
 
 	void Start()
 	{
+		AudioSources = GetComponents<AudioSource>();
+		psl = GameObject.FindGameObjectWithTag("PS_L").GetComponent<ParticleSystem>();
+		psr = GameObject.FindGameObjectWithTag("PS_R").GetComponent<ParticleSystem>();
+		cheer = AudioSources[0];
+		organ = AudioSources[1];
+		waveText.text = "Wave " + (nextWave + 1);
 		if (spawnPoints.Length == 0)
 		{
 			//Debug.LogError("No spawn points referenced.");
@@ -79,10 +93,11 @@ public class WaveSpawner : MonoBehaviour {
 	void WaveCompleted()
 	{
 		//Debug.Log("Wave Completed!");
-
+		organ.Play();
+		cheer.Play();
 		state = SpawnState.COUNTING;
 		waveCountdown = timeBetweenWaves;
-
+		
 		if (nextWave + 1 > waves.Length - 1)
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -90,6 +105,10 @@ public class WaveSpawner : MonoBehaviour {
 		else
 		{
 			nextWave++;
+			waveText.text = "Wave " + (nextWave + 1);
+			organ.pitch += 0.07f;
+			psl.Play();
+			psr.Play();
 		}
 	}
 

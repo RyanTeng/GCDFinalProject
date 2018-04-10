@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114298882355895366}
   - component: {fileID: 82000117879518228}
   m_Layer: 0
-  m_Name: s_bumpire
+  m_Name: s_bumpirelvl2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,9 +188,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 749ee29623707184fbf07782d7930751, type: 3}
   torque: 20
   knockback: 100
-  upperspeed: 2.2
-  lowerspeed: 0.8
-  Health: 50
+  upperspeed: 2.8
+  lowerspeed: 1.5
+  Health: 75
 --- !u!212 &212698051923179596
 SpriteRenderer:
   m_ObjectHideFlags: 1

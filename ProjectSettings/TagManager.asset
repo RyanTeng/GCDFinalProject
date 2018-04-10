@@ -7,6 +7,9 @@ TagManager:
   - Baseball
   - Enemy
   - UI
+  - ActionMusic
+  - PS_L
+  - PS_R
   layers:
   - Default
   - TransparentFX
