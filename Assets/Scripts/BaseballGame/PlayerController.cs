@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private bool boosted;
     private bool criticalHealth;
     private float damageFromEnemy;
+    private float damageFromBat;
 
     // The baseball to instantiate
     public GameObject baseball;
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
         score = 0;
         boosted = false;
         damageFromEnemy = 4;
+        damageFromBat = 3;
         health_text.color = Color.white;
         health_text.text = "Health: " + Health.ToString();
     }
@@ -99,22 +101,33 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             sound.Play();
             Health -= (int) damageFromEnemy;
             health_text.text = "Health: " + Health.ToString();
-            if (Health <= 0)
+            LifeCheck();
+        }
+        if (collision.gameObject.CompareTag("Bat"))
+        {
+            Health -= (int) damageFromBat;
+            health_text.text = "Health: " + Health.ToString();
+            LifeCheck();
+        }
+    }
+
+    private void LifeCheck()
+    {
+        if (Health <= 0)
+        {
+            if (SceneManager.GetActiveScene().name == "sc_field1")
             {
-                if (SceneManager.GetActiveScene().name == "sc_field1")
-                {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                }
-                else
-                {
-                    gameObject.SetActive(false);
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                }
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            else
+            {
+                gameObject.SetActive(false);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }

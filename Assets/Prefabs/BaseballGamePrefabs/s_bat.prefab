@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 82012741255259176}
   m_Layer: 0
   m_Name: s_bat
-  m_TagString: Baseball
+  m_TagString: Bat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
