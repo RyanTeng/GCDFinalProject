@@ -21,6 +21,7 @@
         <e p="Scripts" t="Include">
           <e p="BaseballGame" t="Include">
             <e p="BaseballController.cs" t="Include" />
+            <e p="BatController.cs" t="Include" />
             <e p="CameraScript.cs" t="Include" />
             <e p="CursorScript.cs" t="Include" />
             <e p="EnemyController.cs" t="Include" />

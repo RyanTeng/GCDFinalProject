@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4239176609485880}
   - component: {fileID: 212936721615297484}
   - component: {fileID: 50117350559674990}
-  - component: {fileID: 114675988359340640}
   - component: {fileID: 61815431503029152}
   - component: {fileID: 82012741255259176}
+  - component: {fileID: 114100458280728316}
   m_Layer: 0
   m_Name: s_bat
   m_TagString: Bat
@@ -169,7 +169,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114675988359340640
+--- !u!114 &114100458280728316
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1006568203920132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dc9eeedbfa7e1f41bcc63b5eae6e3b2, type: 3}
+  m_Script: {fileID: 11500000, guid: b2fb239836f2f924583e73ea568c9fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minVelocity: 1
