@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="73a7be43-8db9-43e8-8e83-c26143ec82d0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.GCDFinalProject/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/sfx.meta" afterPath="$PROJECT_DIR$/Assets/Audio/sfx.meta" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BaseballGamePrefabs/s_bumpire.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/BaseballGamePrefabs/s_bumpire.prefab" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/SFX.meta" afterPath="$PROJECT_DIR$/Assets/Audio/SFX.meta" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field1.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field1.unity" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseballGame/EnemyController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseballGame/EnemyController.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseballGame/PlayerController.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseballGame/PlayerController.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field2.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/ActionSequence/sc_field2.unity" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -330,12 +329,12 @@
       <workItem from="1523330947779" duration="3494000" />
       <workItem from="1523367116156" duration="2829000" />
       <workItem from="1523404097377" duration="457000" />
-      <workItem from="1523405354070" duration="1514000" />
+      <workItem from="1523405354070" duration="1710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28145000" />
+    <option name="totallyTimeSpent" value="28341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
