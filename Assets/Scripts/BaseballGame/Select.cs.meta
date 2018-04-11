@@ -1,11 +1,18 @@
 fileFormatVersion: 2
 guid: 1edf5df716de6714292de43c5b15ee8b
-timeCreated: 1523400301
+timeCreated: 1523405752
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - s_player: {instanceID: 0}
+  - music: {instanceID: 0}
+  - manager: {instanceID: 0}
+  - image: {instanceID: 0}
+  - BG: {instanceID: 0}
+  - boy: {fileID: 21300000, guid: 41b7aa5e26acac94e8d4634ba7cba723, type: 3}
+  - girl: {fileID: 21300000, guid: 398b6599236a421448b2eafaf2ca6b35, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -173,10 +173,10 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                nameBox.text = characterName;
                 lineNum--;
                 ShowDialogue();
-                skip = true;
+				nameBox.text = characterName;
+				skip = true;
             }
 			StartCoroutine ("AnimateDialogue");
 		} 
