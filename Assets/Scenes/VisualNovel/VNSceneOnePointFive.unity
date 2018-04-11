@@ -275,7 +275,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8732091f2074e964e83c4c28f8726f57,
+      objectReference: {fileID: 21300000, guid: 8f6018d7601490d4699db28703517041,
         type: 3}
     - target: {fileID: 223068300513869230, guid: e2a34cce47129f746b8049d6ed3504cd,
         type: 2}
@@ -874,7 +874,7 @@ Prefab:
         type: 2}
       propertyPath: characterPoses.Array.data[0]
       value: 
-      objectReference: {fileID: 21300000, guid: 8ae7e6b4655d49f4a8ad0b931aa29d4d,
+      objectReference: {fileID: 21300000, guid: 669bd7a5dae981f48897bfbe2e0827a2,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c1e742d965be8d45b4a8ee5c4e8a1d1, type: 2}

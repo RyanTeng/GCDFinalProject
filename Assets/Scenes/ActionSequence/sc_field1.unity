@@ -8222,20 +8222,20 @@ MonoBehaviour:
   waves:
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: 0835b2e1b1a4eb044a154c96dddb4464, type: 2}
-    count: 20
-    rate: 1
+    count: 20000
+    rate: 50
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: 0835b2e1b1a4eb044a154c96dddb4464, type: 2}
-    count: 20
-    rate: 4
+    count: 100
+    rate: 10
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: f06fe903cab8c1442a665cbdf6be487f, type: 2}
-    count: 20
-    rate: 3
+    count: 100
+    rate: 10
   - name: umpires
     enemy: {fileID: 4369932981137538, guid: f06fe903cab8c1442a665cbdf6be487f, type: 2}
-    count: 20
-    rate: 0.7
+    count: 1000
+    rate: 10
   spawnPoints:
   - {fileID: 1135763932}
   - {fileID: 1787228736}
