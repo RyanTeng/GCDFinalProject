@@ -770,6 +770,23 @@ Prefab:
       propertyPath: BG
       value: 
       objectReference: {fileID: 340469970}
+    - target: {fileID: 114992540399425204, guid: 1994e4ac57660b14ab67c2c84ef8d5e9,
+        type: 2}
+      propertyPath: boy
+      value: 
+      objectReference: {fileID: 21300000, guid: 41b7aa5e26acac94e8d4634ba7cba723,
+        type: 3}
+    - target: {fileID: 114992540399425204, guid: 1994e4ac57660b14ab67c2c84ef8d5e9,
+        type: 2}
+      propertyPath: girl
+      value: 
+      objectReference: {fileID: 21300000, guid: 398b6599236a421448b2eafaf2ca6b35,
+        type: 3}
+    - target: {fileID: 114992540399425204, guid: 1994e4ac57660b14ab67c2c84ef8d5e9,
+        type: 2}
+      propertyPath: s_player
+      value: 
+      objectReference: {fileID: 1871362960}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1994e4ac57660b14ab67c2c84ef8d5e9, type: 2}
   m_IsPrefabParent: 0
@@ -8280,7 +8297,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.7
   health_text: {fileID: 1293463619}
-  score_text: {fileID: 97813539}
   baseball: {fileID: 1006568203920132, guid: bbcda744c9ec2324a93116cbdf828a2a, type: 2}
   torqueSpeed: 500
   ballSpeed: 50

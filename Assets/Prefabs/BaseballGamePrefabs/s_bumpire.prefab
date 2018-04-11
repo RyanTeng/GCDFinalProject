@@ -180,6 +180,9 @@ MonoBehaviour:
   knockback: 100
   upperspeed: 2.2
   lowerspeed: 0.8
+  bat: {fileID: 1006568203920132, guid: a555d4daaf7c6074788f1232b2c706ea, type: 2}
+  torqueSpeed: 200
+  batSpeed: 10
   Health: 50
 --- !u!212 &212698051923179596
 SpriteRenderer:

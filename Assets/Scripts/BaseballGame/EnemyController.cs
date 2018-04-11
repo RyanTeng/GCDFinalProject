@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
@@ -20,10 +21,19 @@ public class EnemyController : MonoBehaviour
     public float upperspeed;
     public float lowerspeed;
 
+        
+    // The bat to instantiate
+    public GameObject bat;
+    // Bat Speeds
+    public float torqueSpeed;
+    public float batSpeed;
+    
     public int Health;
 
     private Rigidbody2D rb2d;
     private AudioSource sound;
+
+    
 
     // Use this for initialization
     void Start()
@@ -45,10 +55,25 @@ public class EnemyController : MonoBehaviour
             player.GetComponent<Rigidbody2D>().transform.position, movespeed * Time.deltaTime);
         if (!criticalHealth && Health < 30)
         {
+            throwBat();
             movespeed *= 2.5f;
             criticalHealth = true;
             spriteRenderer.color = Color.red;
         }
+    }
+    
+    // Instantiates a new ball and gives it a velocity and torque
+    public void throwBat()
+    {
+        Vector3 direction = player.transform.position;
+        // Instantiate ball
+        GameObject newBat = Object.Instantiate(bat, rb2d.transform.position, Quaternion.identity);
+        newBat.SetActive(true);
+        // New ball Rigidbody
+        Rigidbody2D newBatrb2d = newBat.GetComponent<Rigidbody2D>();
+        Vector3 norm = player.transform.position - rb2d.transform.position;
+        newBatrb2d.velocity = (norm.normalized * batSpeed);
+        newBatrb2d.AddTorque(torqueSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

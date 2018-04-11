@@ -10,6 +10,7 @@ TagManager:
   - ActionMusic
   - PS_L
   - PS_R
+  - Bat
   layers:
   - Default
   - TransparentFX

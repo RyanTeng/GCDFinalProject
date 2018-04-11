@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public Text health_text;
-    public Text score_text;
     private Rigidbody2D rb2d;
     private AudioSource sound;
 
