@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BaseballController : MonoBehaviour
 {
@@ -9,11 +7,14 @@ public class BaseballController : MonoBehaviour
 
     // Rigidbody2D
     private Rigidbody2D rb;
+    private AudioSource sound;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sound = GetComponent<AudioSource>();
+        sound.Play();
     }
 
     // Update is called once per frame
