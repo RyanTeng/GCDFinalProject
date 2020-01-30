@@ -4,6 +4,8 @@ using System.Text;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using UnityEditor.SceneManagement;
+
 
 //from http://www.indiana.edu/~gamedev/2015/09/27/creating-a-visual-novel-in-unity/
 public class DialogueParser : MonoBehaviour
